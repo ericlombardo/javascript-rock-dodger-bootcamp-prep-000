@@ -132,13 +132,9 @@ function endGame() {
 
 function moveDodger(e) {
   // implement me!
-
-   // This function should call `moveDodgerLeft()` if the left arrow is pressed
   function wrongKey() {
-    if (e.which !== LEFT_ARROW && e.which !== RIGHT_ARROW) {
-      alert('bingo');
-    }
-  }
+    if (e.which !== LEFT_ARROW && e.which !== RIGHT_ARROW) {}
+  }   
   if (e.which === LEFT_ARROW) {
     moveDodgerLeft();
     e.stopPropagation();
