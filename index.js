@@ -134,12 +134,16 @@ function moveDodger(e) {
   // implement me!
 
    // This function should call `moveDodgerLeft()` if the left arrow is pressed
-   if (e.which === LEFT_ARROW) {
-     moveDodgerLeft();
-     e.stopPropagation();
-     e.preventDefault();
+  function wrongKey() {
+    if (e.which !== LEFT_ARROW && e.which !== RIGHT_ARROW) {
+      e.preventDefault();
+    }
+  }   
+  if (e.which === LEFT_ARROW) {
+    moveDodgerLeft();
+    e.stopPropagation();
+    e.preventDefault();
    }
-   // This function should call `moveDodgerRight()` if the right arrow is pressed
    if (e.which === RIGHT_ARROW) {
      moveDodgerRight();
      e.stopPropagation();
