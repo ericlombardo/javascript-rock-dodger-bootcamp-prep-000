@@ -140,7 +140,6 @@ function moveDodger(e) {
    if (e.which === RIGHT_ARROW) {
      moveDodgerRight();
      e.stopPropagation();
-     e.preventDefault();
    }
    // Check the constants we've declared for you above
 
