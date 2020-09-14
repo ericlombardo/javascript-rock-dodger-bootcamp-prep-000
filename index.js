@@ -136,7 +136,7 @@ function moveDodger(e) {
    // This function should call `moveDodgerLeft()` if the left arrow is pressed
   function wrongKey() {
     if (e.which !== LEFT_ARROW && e.which !== RIGHT_ARROW) {
-      e.preventDefault();
+      alert('bingo');
     }
   }
   if (e.which === LEFT_ARROW) {
