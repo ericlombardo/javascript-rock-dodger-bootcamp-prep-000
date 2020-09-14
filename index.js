@@ -122,7 +122,7 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
-  ROCKS.length = 0;
+  window.requestAnimationFrame();
   alert('YOU LOSE!');
 
 }
