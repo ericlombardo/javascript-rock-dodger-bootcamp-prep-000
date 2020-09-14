@@ -123,6 +123,9 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval);
   alert('YOU LOSE!');
+  if (e.which === LEFT_ARROW) {
+    e.stopPropagation();
+  }
 }
 
 function moveDodger(e) {
@@ -131,7 +134,6 @@ function moveDodger(e) {
    // This function should call `moveDodgerLeft()` if the left arrow is pressed
    if (e.which === LEFT_ARROW) {
      moveDodgerLeft();
-     e.stopPropagation();
      e.preventDefault();
    }
    // This function should call `moveDodgerRight()` if the right arrow is pressed
