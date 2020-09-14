@@ -132,10 +132,8 @@ function endGame() {
 
 function moveDodger(e) {
   // implement me!
-  function wrongKey(e) {
-    if (e.which !== LEFT_ARROW || e.which !== RIGHT_ARROW) {
-      alert('bingo');
-    }
+  if (e.which !== LEFT_ARROW || e.which !== RIGHT_ARROW) {
+    alert('bingo');
   }
   if (e.which === LEFT_ARROW) {
     moveDodgerLeft();
